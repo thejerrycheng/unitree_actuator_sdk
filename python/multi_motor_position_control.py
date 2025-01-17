@@ -13,7 +13,7 @@ gear_ratios = [queryGearRatio(MotorType.GO_M8010_6)] * 3
 
 # Initialize parameters for each motor
 desired_positions = [0.0] * 3  # Initial desired positions in radians
-kp_min, kp_max, kd = 0.1, 1.0, 0.01
+kp_min, kp_max, kd = 0.1, 10.0, 0.01
 position_step = 10 * math.pi / 180  # 10 degrees in radians
 key_states = {  # Track key states (pressed or not)
     "motor1_inc": False, "motor1_dec": False, 
